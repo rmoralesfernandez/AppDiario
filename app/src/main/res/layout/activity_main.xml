@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="@drawable/papel">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="80dp"
+           android:text="Diario"
+           android:layout_gravity="center"
+           android:fontFamily="@font/champignon"
+
+           />
+       <ListView
+           android:id="@+id/lista"
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:maxLines="1"
+           android:ellipsize="end"
+           android:textColor="@color/colorAccent"
+           />
+
+       <Button
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="350dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginTop="20dp"
+
+           android:background="@drawable/pencil"
+           android:onClick="anadir" />
+
+
+
+
+   </LinearLayout>
+
+</ScrollView>
